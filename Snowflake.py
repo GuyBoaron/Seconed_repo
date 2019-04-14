@@ -23,4 +23,5 @@ for c in range(5):
  		t.circle(i,a)
  		t.right(b)
  		t.circle(i,a)
+turtle.mainloop()
 input('Press any key to continue...')
