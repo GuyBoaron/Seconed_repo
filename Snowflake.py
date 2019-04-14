@@ -1,8 +1,14 @@
 
-import matplotlib
-matplotlib.use('Agg')
-
+import os
 from turtle import Turtle
+
+import matplotlib as mpl
+if os.environ.get('DISPLAY','') == '':
+    print('no display found. Using non-interactive Agg backend')
+    mpl.use('Agg')
+import matplotlib.pyplot as plt
+
+
 t = Turtle()
 t.speed(0)
 #a = 180
